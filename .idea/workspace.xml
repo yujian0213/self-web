@@ -33,7 +33,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
     <configuration name="go build self-web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -78,10 +78,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1388" height="228" key="GridCell.Tab.0.right/-163.-1055.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1666276966208" />
-    <state x="0" y="0" width="1156" height="900" key="SettingsEditor" timestamp="1666341399638">
+    <state x="0" y="0" width="1156" height="900" key="SettingsEditor" timestamp="1667279705440">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="0" y="0" width="1156" height="900" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1666341399638" />
+    <state x="0" y="0" width="1156" height="900" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1667279705440" />
     <state x="337" y="143" width="887" height="686" key="find.popup" timestamp="1666624240768">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
