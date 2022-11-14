@@ -1,19 +1,19 @@
-package framework
+package middleware
 
 import (
 	"context"
 	"fmt"
+	"github.com/yujian0213/self-web/framework/gin"
 	"log"
 	"time"
 )
 
-func TimeoutHandler(fun ControllerHandler,d time.Duration) ControllerHandler {
-	return func(c *Context) error {
+func Timeout(d time.Duration) gin.HandlerFunc {
+	return func(c *gin.Context)  {
 		finish := make(chan struct{}, 1)
 		panicChan := make(chan interface{}, 1)
-		durationCtx, cancel := context.WithTimeout(c.BaseContext(), d)
+		durationCtx, cancel := context.WithTimeout(context.Background(), d)
 		defer cancel()
-		c.request.WithContext(durationCtx)
 		go func() {
 			defer func() {
 				if p := recover(); p != nil {
@@ -21,19 +21,17 @@ func TimeoutHandler(fun ControllerHandler,d time.Duration) ControllerHandler {
 				}
 			}()
 			//执行具体逻辑
-			_ = c.Next()
+			c.Next()
 			finish <- struct{}{}
 		}()
 		select {
 		case p := <- panicChan:
-			_ = c.Json(500, "time out")
+			 c.ISetStatus(500).IJson("timeout")
 			log.Println(p)
 		case <- durationCtx.Done():
-			c.SetHasTimeout()
-			_ = c.Json(500, "time out")
+			c.ISetStatus(500).IJson("timeout")
 			case <- finish:
 			fmt.Println("finish")
 		}
-		return nil
 	}
 }

@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4975634-ad3d-4108-901a-27ea107f7db6" name="Default Changelist" comment="" />
+    <list default="true" id="e4975634-ad3d-4108-901a-27ea107f7db6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/framework/gin/self_request.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework/gin/self_response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subject_controller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/contex.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/contex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/controller.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/core.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/core.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/binding/binding_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/binding/binding_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/binding/form_mapping.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/binding/form_mapping.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/binding/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/binding/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/context.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/context.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/context_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/context_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/debug_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/debug_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/deprecated.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/deprecated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/deprecated_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/deprecated_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/errors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/errors_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/gin.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/gin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/ginS/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/ginS/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/ginS/gins.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/ginS/gins.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/gin_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/gin_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/mode.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/mode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/mode_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/mode_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/render/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/render/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/render/render_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/render/render_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/render/text.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/render/text.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/tree_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/tree_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/gin/utils_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/gin/utils_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/group.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/group.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/middleware/coast.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/middleware/coast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/middleware/recovery.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/middleware/recovery.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/timeout.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/middleware/timeout.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/trie.go" beforeDir="false" afterPath="$PROJECT_DIR$/framework/trie.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/route.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +82,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2D6qLgPrpfGjKS25DHfgaDiyDfV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,6 +99,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/framework/middleware" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="go build self-web" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -53,6 +123,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -82,11 +163,15 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="0" y="0" width="1156" height="900" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1667279705440" />
-    <state x="337" y="143" width="887" height="686" key="find.popup" timestamp="1666624240768">
+    <state x="562" y="347" key="VCS.ChangelistChooser" timestamp="1667722114026">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="562" y="347" key="VCS.ChangelistChooser/0.0.1440.900@0.0.1440.900" timestamp="1667722114026" />
+    <state x="337" y="143" width="887" height="754" key="find.popup" timestamp="1668326344895">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="337" y="143" width="887" height="686" key="find.popup/-163.-1055.1920.1055/0.0.1440.900@0.0.1440.900" timestamp="1666624240768" />
-    <state x="337" y="143" width="887" height="686" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1666521802700" />
+    <state x="337" y="143" width="887" height="754" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1668326344895" />
     <state x="301" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1666341491755">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

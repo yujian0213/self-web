@@ -2,6 +2,7 @@ package framework
 
 import (
 	"errors"
+	"github.com/yujian0213/self-web/framework/gin"
 	"strings"
 )
 //代表树结构
@@ -12,7 +13,7 @@ type Tree struct {
 type node struct {
 	isLast bool
 	segment string
-	handlers []ControllerHandler
+	handlers []gin.HandlerFunc
 	childs []*node
 	parent *node
 }
@@ -85,7 +86,7 @@ func (n *node) matchNode(uri string) *node {
 	return nil
 }
 //增加路由节点
-func (tree *Tree) AddRouter(uri string, handlers []ControllerHandler) error {
+func (tree *Tree) AddRouter(uri string, handlers []gin.HandlerFunc) error {
 	n := tree.root
 	if n.matchNode(uri) != nil {
 		return errors.New("route exist: " + uri)
@@ -136,7 +137,7 @@ func (tree *Tree) AddRouter(uri string, handlers []ControllerHandler) error {
 }
 
 // 匹配uri获取handler
-func (tree *Tree) FindHandler(uri string) []ControllerHandler {
+func (tree *Tree) FindHandler(uri string) []gin.HandlerFunc {
 	matchNode := tree.root.matchNode(uri)
 	if matchNode == nil {
 		return nil

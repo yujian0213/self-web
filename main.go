@@ -2,19 +2,19 @@ package main
 
 import (
 	"context"
+	"github.com/yujian0213/self-web/framework/gin"
+	"github.com/yujian0213/self-web/framework/middleware"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
-	"self-web/framework"
-	"self-web/framework/middleware"
 	"syscall"
 	"time"
 )
 
 func main() {
-	core := framework.NewCore()
-	core.Use(middleware.Recovery())
+	core := gin.New()
+	core.Use(gin.Recovery())
 	core.Use(middleware.Coast())
 	registerRouter(core)
 	server := &http.Server{

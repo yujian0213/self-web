@@ -1,23 +1,24 @@
 package framework
 
 import (
+	"github.com/yujian0213/self-web/framework/gin"
 	"log"
 	"net/http"
 	"strings"
 )
 //框架核心结构
 type Core struct {
-	//router map[string]map[string]ControllerHandler
+	//router map[string]map[string]gin.HandlerFunc
 	router map[string]*Tree
-	middlewares []ControllerHandler
+	middlewares []gin.HandlerFunc
 }
 //初始化框架核心结构
 func NewCore() *Core  {
 	//定义路由map
-	//getRouter    := map[string]ControllerHandler{}
-	//postRouter   := map[string]ControllerHandler{}
-	//putRouter    := map[string]ControllerHandler{}
-	//deleteRouter := map[string]ControllerHandler{}
+	//getRouter    := map[string]gin.HandlerFunc{}
+	//postRouter   := map[string]gin.HandlerFunc{}
+	//putRouter    := map[string]gin.HandlerFunc{}
+	//deleteRouter := map[string]gin.HandlerFunc{}
 	//初始化路由
 	router := map[string]*Tree{}
 	router["GET"] 	 = NewTree()
@@ -27,7 +28,7 @@ func NewCore() *Core  {
 	return &Core{router: router}
 }
 //批量注册注册通用中间件
-func (c *Core) Use(middlewares ...ControllerHandler)  {
+func (c *Core) Use(middlewares ...gin.HandlerFunc)  {
 	c.middlewares = append(c.middlewares,middlewares...)
 }
 //初始化Group
@@ -35,26 +36,26 @@ func (c *Core) Group(prefix string) IGroup  {
 	return NewGroup(c,prefix)
 }
 //注册静态路由（按方法拆分）
-func (c *Core) Get(uri string,handlers ...ControllerHandler)  {
+func (c *Core) Get(uri string,handlers ...gin.HandlerFunc)  {
 	//将core的middlewares和handlers合并
 	allHandlers := append(c.middlewares,handlers...)
 	if err := c.router["GET"].AddRouter(uri,allHandlers);err != nil {
 		log.Fatal("add router error: ", err)
 	}
 }
-func (c *Core) Post(uri string,handlers ...ControllerHandler)  {
+func (c *Core) Post(uri string,handlers ...gin.HandlerFunc)  {
 	allHandlers := append(c.middlewares,handlers...)
 	if err := c.router["POST"].AddRouter(uri,allHandlers);err != nil {
 		log.Fatal("add router error: ", err)
 	}
 }
-func (c *Core) Put(uri string,handlers ...ControllerHandler)  {
+func (c *Core) Put(uri string,handlers ...gin.HandlerFunc)  {
 	allHandlers := append(c.middlewares,handlers...)
 	if err := c.router["PUT"].AddRouter(uri,allHandlers);err != nil {
 		log.Fatal("add router error: ", err)
 	}
 }
-func (c *Core) Delete(uri string,handlers ...ControllerHandler)  {
+func (c *Core) Delete(uri string,handlers ...gin.HandlerFunc)  {
 	allHandlers := append(c.middlewares,handlers...)
 	if err := c.router["DELETE"].AddRouter(uri,allHandlers);err != nil {
 		log.Fatal("add router error: ", err)

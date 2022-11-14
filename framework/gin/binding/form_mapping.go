@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gin-gonic/gin/internal/bytesconv"
-	"github.com/gin-gonic/gin/internal/json"
+	"github.com/yujian0213/self-web/framework/gin/internal/bytesconv"
+	"github.com/yujian0213/self-web/framework/gin/internal/json"
 )
 
 var errUnknownType = errors.New("unknown type")

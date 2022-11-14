@@ -1,7 +1,8 @@
 package framework
 
-import (
+/*import (
 	"context"
+	"github.com/yujian0213/self-web/framework/gin"
 	"net/http"
 	"sync"
 	"time"
@@ -11,7 +12,7 @@ type Context struct {
 	request *http.Request
 	responseWriter http.ResponseWriter
 	ctx context.Context
-	handlers []ControllerHandler
+	handlers []gin.HandlerFunc
 	index int
 
 	//写保护机制
@@ -31,11 +32,11 @@ func NewContext(r *http.Request,w http.ResponseWriter) *Context  {
 	}
 }
 //为ctx设置handlers
-func (ctx *Context) SetHandlers(handlers []ControllerHandler)  {
+func (ctx *Context) SetHandlers(handlers []gin.HandlerFunc)  {
 	ctx.handlers = handlers
 }
 //实现链条调用handler
-func (ctx *Context) Next() error  {
+func (ctx *gin.Context) Next() error  {
 	ctx.index++
 	if ctx.index < len(ctx.handlers) {
 		if err := ctx.handlers[ctx.index](ctx);err != nil {
@@ -89,3 +90,4 @@ func (ctx *Context) HTML(status int, obj interface{}, template string) error {
 
 
 
+*/
